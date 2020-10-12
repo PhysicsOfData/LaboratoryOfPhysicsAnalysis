@@ -45,7 +45,7 @@ In particular, if you are working in a location where such repo already exist, w
 
 `git fetch upstream`
 
-  * The default branch is `master`, you should now create your  development branch where to play and exercise with the code. Note that however you have a branch corresponding to you (name_surname) in the upstream repository (`upstream/name_surname`): that is the branch you should point the pull request to. In order to set up a proper development cycle, you must create a branch (in the example below called TRACKING_BRANCH_NAME) that *tracks* `upstream/name_surname`:
+  * The default branch is `main`, you should now create your  development branch where to play and exercise with the code. Note that however you have a branch corresponding to you (name_surname) in the upstream repository (`upstream/name_surname`): that is the branch you should point the pull request to. In order to set up a proper development cycle, you must create a branch (in the example below called TRACKING_BRANCH_NAME) that *tracks* `upstream/name_surname`:
 
 `git branch -vv`
 
@@ -59,15 +59,15 @@ Note that the case you decide do make your development in a branch that does NOT
   
 `git pull`
 
-  * Before starting with the development you could check whether the orginal repository (PhysicsOfData's one) have been updated with respect to your forked version (that's likely to be the case prior to every lab class). If it had, then merge the chances into your master.
+  * Before starting with the development you could check whether the orginal repository (PhysicsOfData's one) have been updated with respect to your forked version (that's likely to be the case prior to every lab class). If it had, then merge the chances into your main.
 
   `git fetch upstream`
 
-  `git checkout master`
+  `git checkout main`
 
-  `git merge upstream/master`
+  `git merge upstream/main`
 
-  The idea is that your master always reflects `upstream/master`, i.e. it keeps a local copy of the reference code as a starting point for your developments (i.e. solving the assigned problems).
+  The idea is that your main always reflects `upstream/main`, i.e. it keeps a local copy of the reference code as a starting point for your developments (i.e. solving the assigned problems).
   Note that in order to update your repository on github, you need to push the local version (see later).
 
   * In the case a pull request of yours to PhysicsOfData has been recently approved, you also need to synch your development branch:
@@ -76,9 +76,9 @@ Note that the case you decide do make your development in a branch that does NOT
 
   `git merge upstream/name_surname`
 
-  * You may also need to get the updates from the master, i.e. need to merge the master:
+  * You may also need to get the updates from the main, i.e. need to merge the main:
 
-  `git merge master`
+  `git merge main`
 
   * Now do the real stuff, i.e. developing some code. Image you create a NEW_FILE. Add the file to your local repository and stages it for commit (To unstage a file, use 'git reset HEAD NEW_FILE)'
 
